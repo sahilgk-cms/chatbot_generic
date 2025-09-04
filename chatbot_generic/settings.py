@@ -78,7 +78,7 @@ DATABASES = {
         "NAME": "<db name>",       # database name
         "USER": "<username>",       # db username
         "PASSWORD": "<password>", # db password
-        "HOST": "<same as container name in docker-compose>",          # or the DB server hostname / IP
+        "HOST": "<same as container name in docker-compose or the RDS endpoint>",          # or the DB server hostname / IP
         "PORT": "5432",               # default postgres port
     }
 }
