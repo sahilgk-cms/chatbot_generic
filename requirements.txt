@@ -1,0 +1,6 @@
+llama-index==0.13.4
+llama-index-llms-google-genai==0.3.0
+llama-index-llms-openai==0.5.4
+Django==5.2.1
+djangorestframework==3.16.0
+psycopg2-binary==2.9.10
