@@ -3,7 +3,7 @@ version: "3.9"
 services:
   db:
     image: postgres:15
-    container_name: pgdb
+    container_name: <same as host name in settings.py>
     restart: always
     environment:
       POSTGRES_DB: <database name>
