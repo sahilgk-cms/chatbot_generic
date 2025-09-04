@@ -20,6 +20,14 @@ logger = get_logger(__name__)
 
 
 def instantiate_llm(llm_name: str, api_key: str) -> llama_index.llms:
+    """
+    Instantiates the LLM baed on name
+    Args:
+        llm_name (str): name of the LLM - OpenAI or Gemini
+        api_key (str): api key
+    Returns:
+        llama-index compatible llm
+    """
     cfg = LLM_CONFIG.get(llm_name)
     if not cfg:
         raise ValueError(f"Unsupported LLM: {llm_name}")
