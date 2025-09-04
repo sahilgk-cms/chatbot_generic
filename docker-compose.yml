@@ -6,9 +6,9 @@ services:
     container_name: pgdb
     restart: always
     environment:
-      POSTGRES_DB: oak
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: The46$#ow
+      POSTGRES_DB: <database name>
+      POSTGRES_USER: <user name>
+      POSTGRES_PASSWORD: <password>
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
