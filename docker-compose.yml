@@ -1,6 +1,8 @@
 version: "3.9"
 
 services:
+
+# This db section won't be needed if we are using Amazon RDS 
   db:
     image: postgres:15
     container_name: <same as host name in settings.py>
@@ -31,6 +33,13 @@ services:
     depends_on:
       - db:
           condition: service_healthy
+
+# Use this section if using Amazon RDS
+  check-rds:
+    image: postgres:17
+    command: [ "pg_isready", "-h", "<Amazon RDS endpoint>", "-p", "5432", "-U", "your_db_user" ]
+    environment:
+      POSTGRES_PASSWORD: <your_password>
 
 volumes:
   pgdata:
