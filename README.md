@@ -66,16 +66,15 @@ Install the requirements
 ```
  Since the data will be stored in PostgreSQL, we will have to run migrations to set up the tables in the database.
 ENter username and password in settings.py before running migrations
- <img width="640" height="280" alt="image" src="https://github.com/user-attachments/assets/51a61fd4-eca9-49d3-b2f8-193a419becac" />
+
 
  ```bash
   python manage.py makemigrations
   python manage.py migrate
 ```
-The two tables will be creates
+The two tables will be created and they will have a relationship like this...
+<img width="1288" height="615" alt="image" src="https://github.com/user-attachments/assets/18b180b1-aec2-4fdf-852d-3274689f24a5" />
 
-- chatsession
-  <img width="658" height="56" alt="image" src="https://github.com/user-attachments/assets/5c395ee2-8542-40ab-ba82-d6f7bf6f46ba" />
 
 
 ## API Reference
