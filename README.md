@@ -43,3 +43,18 @@ chatbot_generic
 - Refer the image for the configuration of the PostgreSQL.
 - <img width="1341" height="748" alt="image" src="https://github.com/user-attachments/assets/12639bb1-f796-42a5-bb1b-2e7487f14406" />
 
+## API Reference
+
+### Chatbot
+
+```http
+  POST /chatbot/chat/
+```
+
+| Body Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| text | str | name of the document context  |
+| query | str | query  |
+| llm_name | str | name of the LLM that will be used for querying  |
+| session_id | uuid | Optional. id of the session. if not given will create a new session id  |
+
