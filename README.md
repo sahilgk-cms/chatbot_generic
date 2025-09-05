@@ -38,3 +38,7 @@ chatbot_generic
 - The **config** contains all the constants from the environment and the **logging_config** is to generate logs.
 - **Dockerfile** is for Django image building.
 - **docker-compose.yml** is used to containerize all the frameworks used - Django + PostgreSQL.
+- Note that there's no need to create a separate container inside Docker for PostgreSQL if Amazon RDS is used...
+- Refer the image for the configuration of the PostgreSQL.
+- <img width="1341" height="748" alt="image" src="https://github.com/user-attachments/assets/12639bb1-f796-42a5-bb1b-2e7487f14406" />
+
