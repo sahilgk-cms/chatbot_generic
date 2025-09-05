@@ -12,6 +12,7 @@ chatbot_generic
 │  ├── models.py
 │  ├── serializers.py
 │  ├── tests.py
+│  ├── urls.py
 │  ├── views.py
 │  └── __init__.py
 ├── chatbot_generic
